@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="icon" type="png" href="GLA.png">
+<script type="text/javascript" src="reg_com.js"></script>
+<style type="text/css">
+	th {color:rgb(64,64,64);}
+	.a:hover {text-transform: uppercase;} 
+</style>
+</head>
+<body>
+	<span style="position: fixed; width: 1390; background-color: white;">
+	<div style="background-color:RGB(14,98,81);height:32;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="cont.html" class="a" style="text-decoration:none;" target="_blank"><font style="font-size:22; color:white; ">&#9743&nbsp</font><font style="font-size:16; color:white; ">For Admission Query:8937099911</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|</font>
+		<a class="a" href="http://gla.ac.in/study-with-us/campus-tour" target="_blank" style="text-decoration:none;"><font style="color:	orange; font-size:16"><b>&nbsp&nbsp&nbsp&nbsp360<sup>o</sup> Virtual Tour</b></font></a>&nbsp&nbsp&nbsp&nbsp<font style="color:white;">|</font>&nbsp&nbsp&nbsp&nbsp<a class="a" target="_blank" href="http://estv.in/gla/" style="text-decoration:none;"><font style="color:white; font-size:16">Convacation Live 2018</font></a>&nbsp&nbsp&nbsp&nbsp<font style="color:white;">|</font><a href="https://www.facebook.com/glauniv" target="_blank"><img src="facebook.png" style="width:20; height:20;"></a>&nbsp&nbsp<a href="https://twitter.com/gla_mathura" target="_blank"><img src="twitter.png" style="width:24; height:17;"></a>&nbsp<a href="https://plus.google.com/117725914128868840841" target="_blank"><img src="googleplus.png" style="width:22; height:18;"></a>&nbsp&nbsp<a href="https://www.youtube.com/channel/UCzv9lLHktV5HGuDHKvS_zyg" target="_blank"><img src="youtube.png" style="width:22; height:18;"></a>&nbsp&nbsp<a href="http://blog.gla.ac.in/" target="_blank"><img src="blog.jpg" style="width:22; height:18;"></a><!--
+		&nbsp&nbsp<font style="color:white; font-size:18; font-family:arial;"><b>f</b></font>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsph-->
+	</div>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="index.html"><img src="LOGOO.jpg" style="width:140px; height:83px;"></a><img src="glau.jpg" align="right" style="width:700; height:90;">
+	<hr>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="a" href="index.html" style="text-decoration:none; color:black;">GLA University</a> / Registration
+	<span style="float:right; margin-right:150px;" >Completed : <progress id="prog" value="10" max="100" min="0"></progress></span>	
+	<hr>
+	</span>
+	<br><br><br><br><br><br><br><br><br><br>
+	<form name="first_form" method="post" action="form.php">
+		<center><table width="500" cellspacing="10" cellpadding="3" style="font-size:18">
+		<tr>
+			<th style="font-size:25" colspan="2">User Registration Form</th>
+		</tr>
+		<tr>
+			<th>Name</th>
+			<th><input autofocus onblur="func_name()" onfocus="func_name1()" id="name" size="30" type="text" name="name" required placeholder="i.e. SPARSH AGRAWAL"></th>
+		</tr>
+		<tr>
+			<th>Display Name</th>
+			<th><input size="30" onblur="func_d_n()" onfocus="func_d_n1()" id="d_name" type="text" name="display_name" placeholder="i.e. Sparsh"></th>
+		</tr>
+		<tr>
+			<th>Email Address</th>
+			<th><input size="30" onblur="func_email()" onfocus="func_email1()" id="email" type="email" name="email" required placeholder="i.e. xyz12@gmail.com"></th>
+		</tr>
+		<tr>
+			<th>Password</th>
+			<th><input size="30" onblur="func_pass()" onfocus="func_pass1()" id="password" type="password" name="password" required placeholder="10-15 letters including numbers"></th>
+		</tr>
+		<tr>
+			<th>Confirm Password</th>
+			<th><input size="30" onblur="func_c_p()" onfocus="func_c_p1()" id="c_password" type="password" name="confirm_password" required></th>
+		</tr>
+		<tr>
+			<th>Gender</th>
+			<th><label><input type="radio" onclick="func_c()" name="gender" id="male" value="Male" required> Male</label>
+			<label><input type="radio" onclick="func_c()" name="gender" id="female" value="Female" required> Female</label>
+			<label><input type="radio" onclick="func_c()" name="gender" id="other" value="Other" required> Other</label></th>
+		</tr>
+		<tr>
+			<th>Date of Birth</th>
+			<th><label><input onblur="func_dob()" onfocus="func_dob1()" id="d_o_b" type="date"></label></th>
+		</tr>
+		<tr>
+			<th>City</th>
+			<th><input size="30" onblur="func_city()" onfocus="func_city1()" id="city" type="text" name="city" placeholder="i.e. Mathura"></th>
+		</tr>
+		<tr>
+			<th>Country</th>
+			<th><select>
+				<option class="country" value="india">INDIA</option>
+				<option class="country" value="usa">USA</option>
+				<option class="country" value="china">CHINA</option>
+			</select></th>
+		<tr>
+			<th>Hobbies</th>
+			<th><input type="checkbox" onclick="func_dan()" name="dance" value="DANCE">Dance&nbsp&nbsp
+				<input type="checkbox" onclick="func_sin()" name="sing" value="SING">Sing&nbsp&nbsp
+				<input type="checkbox" onclick="func_pan()" name="paint" value="PAINT">Paint&nbsp&nbsp
+				<input type="checkbox" name="other" value="OTHER" id="o_h" onclick="myFunction()">Other&nbsp&nbsp</th>
+		</tr> 
+		<tr>
+			<td></td>
+			<td colspan="2" style="display: none;" id="other1">
+				<input type="text" name="other_hobies" required>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="2"><input type="Submit" value="SUBMIT">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="Reset" onclick="func_res()" name="reset" value="Reset"></th>
+		</tr>
+	</table></center>
+	</form>
+	<script>
+		function myFunction(){
+
+			var checkbox = document.getElementById('o_h')
+			var text = document.getElementById('other1')
+			if (checkbox.checked==true){
+				other1.style.display="block";
+			}
+			else{
+				other1.style.display="none";
+			}
+		}
+	</script>
+
+
+</body>
+</html>
